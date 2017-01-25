@@ -31,7 +31,7 @@ import com.facebook.common.soloader.SoLoaderShim;
  * </code>
  */
 public class ImagePipelineNativeLoader {
-  public static final String DSO_NAME = "imagepipeline";
+  public static final String DSO_NAME = "imagepipelinechat";
 
   public static final List<String> DEPENDENCIES;
   static {
@@ -40,6 +40,6 @@ public class ImagePipelineNativeLoader {
   }
 
   public static void load() {
-    SoLoaderShim.loadLibrary("imagepipeline");
+    SoLoaderShim.loadLibrary("imagepipelinechat");
   }
 }

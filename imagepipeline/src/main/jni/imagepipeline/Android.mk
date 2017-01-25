@@ -3,7 +3,7 @@
 LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := imagepipeline
+LOCAL_MODULE := imagepipelinechat
 LOCAL_SRC_FILES := \
 	decoded_image.cpp \
 	exceptions.cpp \
@@ -17,7 +17,7 @@ LOCAL_SRC_FILES := \
 
 CXX11_FLAGS := -std=c++11
 LOCAL_CFLAGS += $(CXX11_FLAGS)
-LOCAL_CFLAGS += -DLOG_TAG=\"libimagepipeline\"
+LOCAL_CFLAGS += -DLOG_TAG=\"libimagepipelinechat\"
 LOCAL_CFLAGS += -fvisibility=hidden
 LOCAL_CFLAGS += $(FRESCO_CPP_CFLAGS)
 LOCAL_EXPORT_CPPFLAGS := $(CXX11_FLAGS)
